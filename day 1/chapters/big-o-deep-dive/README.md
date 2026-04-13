@@ -65,6 +65,18 @@ xychart-beta
 ### Checkpoint 0
 Rank fastest to slowest growth: `O(n^2)`, `O(1)`, `O(n log n)`, `O(log n)`, `O(n)`.
 
+**Corrected list (fastest -> slowest):**
+
+`O(1)`, `O(log n)`, `O(n)`, `O(n log n)`, `O(n^2)`
+
+**Why this is the correct order:**
+
+- **`O(1)` (Constant):** Fastest. No matter how big `n` gets, it takes the same time.
+- **`O(log n)` (Logarithmic):** Very fast. Doubling input size adds only a small amount of work (e.g., binary search).
+- **`O(n)` (Linear):** Runtime grows proportionally with input size.
+- **`O(n log n)` (Linearithmic):** Slower than linear but faster than quadratic (e.g., merge sort).
+- **`O(n^2)` (Quadratic):** Slowest here. Doubling input can roughly quadruple work (e.g., nested loops).
+
 ---
 
 ## Module 1 — Time/Space Complexity Review (Deep)
